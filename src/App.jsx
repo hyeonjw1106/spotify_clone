@@ -12,7 +12,7 @@ import pl_title from './assets/pl_title.png'
 import './App.css'
 
 export default function App() {
-  const [page, setPage] = useState('all'); // 현재 화면 상태
+  const [page, setPage] = useState('all');
 
   return (
     <div>

@@ -15,7 +15,6 @@ import ahod from './assets/aHeadOfDreams.png';
 import boy from './assets/boyhood.png';
 
 export default function Allmusic({ setPage }) {
-  // ✅ 아티스트 배열
   const artists = [
     { img: shawn_mendes, name: "Shawn Mendes", intro: "캐나다의 싱어송라이터" },
     { img: justin, name: "Justin Bieber", intro: "캐나다의 가수" },
@@ -24,7 +23,6 @@ export default function Allmusic({ setPage }) {
     { img: iu, name: "아이유", intro: "대한민국의 가수" }
   ];
 
-  // ✅ 앨범 배열
   const albums = [
     { img: ahod, name: "A Head Of Dreams" },
     { img: a, name: "A" },
@@ -49,20 +47,20 @@ export default function Allmusic({ setPage }) {
         팟캐스트
       </button>
 
-      {/* 플레이리스트 */}
+  
       <div className='music-div-pl'>
         <img src={pl_title} className='pl-title-img'/>
         <p className='pl-title'> 내 플레이리스트#1 </p>
       </div>
 
-      {/* 아티스트 */}
+
       <div className='artist'>
         <h2 className='artist-title'>인기 아티스트</h2>
         <div className='artist-list'>
           {artists.map((artist, idx) => (
             <div className='artist-div' key={idx}>
               <img src={artist.img} className='artist-img' />
-              <img src={play} className='play-icon' /> {/* hover 시 중앙 아이콘 */}
+              <img src={play} className='play-icon' />
               <p className='artist-name'>{artist.name}</p>
               <p className='artist-intro'>{artist.intro}</p>
             </div>
@@ -77,7 +75,7 @@ export default function Allmusic({ setPage }) {
           {albums.map((album, idx) => (
             <div className='album-div' key={idx}>
               <img src={album.img} className='album-img' />
-              <img src={play} className='play-icon' /> {/* hover 시 중앙 아이콘 */}
+              <img src={play} className='play-icon' />
               <p className='album-name'>{album.name}</p>
             </div>
           ))}
