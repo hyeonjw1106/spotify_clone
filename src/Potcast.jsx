@@ -4,7 +4,7 @@ export default function Potcast({ setPage }) {
   return (
     <div className='music-div'>
       <button 
-        className='all-onlymusic-potcast'
+        className='all-potcast'
         onClick={() => setPage('all')}
       >
         모두

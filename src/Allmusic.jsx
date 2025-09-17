@@ -47,12 +47,14 @@ export default function Allmusic({ setPage }) {
         팟캐스트
       </button>
 
-  
-      <div className='music-div-pl'>
+      {/* 플레이리스트 클릭 시 Playlist.jsx 렌더링 */}
+      <div 
+        className='music-div-pl'
+        onClick={() => setPage('playlist')}
+      >
         <img src={pl_title} className='pl-title-img'/>
         <p className='pl-title'> 내 플레이리스트#1 </p>
       </div>
-
 
       <div className='artist'>
         <h2 className='artist-title'>인기 아티스트</h2>
@@ -68,7 +70,6 @@ export default function Allmusic({ setPage }) {
         </div>
       </div>
 
-      {/* 앨범 */}
       <div className='album'>
         <h2 className='album-title'>인기 앨범 및 싱글</h2>
         <div className='album-list'>
