@@ -8,6 +8,7 @@ import size_up from './assets/size_up.png'
 import Allmusic from './Allmusic';
 import Onlymusic from './Onlymusic';
 import Potcast from './Potcast';
+import pl_title from './assets/pl_title.png'
 import './App.css'
 
 export default function App() {
@@ -32,16 +33,20 @@ export default function App() {
         <img src={size_up} className='size-up-logo'/>
         <div className='category-pl'>플레이리스트</div>
         <div className='pl-list'>
-          <h4 className='pl-info'>내 플레이리스트#1</h4>
-          <p className='pl-info'>플레이리스트 · 현준우</p>
+          <img src={pl_title} className='pl-img'/>
+          <h4 className='pl-info-name'>내 플레이리스트#1</h4>
+          <p className='pl-info-cate'>플레이리스트 · 현준우</p>
         </div>
       </div>
 
-      {/* 가운데 전환되는 메인 콘텐츠 */}
       <div className="main-content">
         {page === 'all' && <Allmusic setPage={setPage} />}
         {page === 'onlymusic' && <Onlymusic setPage={setPage} />}
         {page === 'potcast' && <Potcast setPage={setPage} />}
+      </div>
+
+
+      <div className='music-state'>
       </div>
     </div>
   )
