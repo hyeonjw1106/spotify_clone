@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';  // ✅ 추가
+import { useNavigate } from 'react-router-dom';
 import pl_title from './assets/pl_title.png';
 import size_up from './assets/size_up.png';
 import './App.css';

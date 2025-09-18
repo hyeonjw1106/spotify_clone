@@ -615,7 +615,7 @@ body {
 
 .premium-div {
   background: linear-gradient(to right, #ff2c97, #682699);
-  width: 1440px;
+  width: 100%;
   height: 500px;
   margin-top: -63px;
 }
@@ -659,4 +659,43 @@ body {
   margin-top: 45px;
   margin-left: 520px;
   font-size: 35px;
+}
+
+.pay-system-intro {
+  margin-left: 450px;
+  font-size: 17px;
+}
+
+.pay-system-method {
+  width: 150px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: white;
+  float: left;
+  margin-left: 30px;
+  transition: transform 0.1s ease-in-out;
+}
+
+.pay-system-method:hover {
+  transform: scale(1.04);
+}
+
+.pay-system-list {
+  margin-left: 350px;
+}
+
+.pay-system-img {
+  width: 100px;
+  height: 60px;
+  padding-left: 25px;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
+.premium-return {
+  font-size: 20px;
+  font-weight: 700;
+  color: lightgray;
+  margin-left: 1300px;
+  background-color: black;
 }

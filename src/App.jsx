@@ -16,10 +16,8 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        {/* Premium 페이지는 완전히 별도 레이아웃 */}
         <Route path="/premium" element={<Premium />} />
 
-        {/* 기본 레이아웃 */}
         <Route
           path="/*"
           element={

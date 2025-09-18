@@ -1,6 +1,13 @@
 import './App.css'
+import visa from './assets/visa.png';
+import balls from './assets/balls.png';
+import aexpress from './assets/aexpress.png';
+import jcb from './assets/jcb.png';
+import { useNavigate } from 'react-router-dom';
 
 export default function Premium() {
+    const navigate = useNavigate();
+
     return (
     <div>
         <div className='premium-div'>
@@ -12,7 +19,29 @@ export default function Premium() {
 
         <div className='pay-system-div'>
             <h2 className='pay-system-viral'>어떤 상황에도 합리적인 요금제</h2>
-            <p>Premium 요금제를 선택하고 휴대폰, 스피커 및 기타 기기에서 제한없이 광고 없는 음악<br/>을 들으세요. 다양한 방법으로 요금을 결제하세요. 언제든지 해지 가능합니다.</p>
+            <p className='pay-system-intro'>Premium 요금제를 선택하고 휴대폰, 스피커 및 기타 기기에서 제한없이 광고 없는 음악<br/>
+            을 들으세요. 다양한 방법으로 요금을 결제하세요. 언제든지 해지 가능합니다.</p>
+            <div className='pay-system-list'>
+                <div className='pay-system-method'>
+                    <img src={visa} className='pay-system-img'/>
+                </div>
+
+                <div className='pay-system-method'>
+                    <img src={balls} className='pay-system-img'/>
+                </div>
+
+                <div className='pay-system-method'>
+                   <img src={aexpress} className='pay-system-img'/>
+                </div>
+
+                <div className='pay-system-method'>
+                    <img src={jcb} className='pay-system-img'/>
+                </div>
+            </div>
+
+            <button className='premium-return' onClick={() => {
+                navigate('/')}
+            }>돌아가기</button>
         </div>
     </div>
     )
