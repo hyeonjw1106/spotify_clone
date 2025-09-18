@@ -1,6 +1,7 @@
 import './App.css';
 import pl_title from './assets/pl_title.png';
 import play from './assets/play.png';
+import { useNavigate } from 'react-router-dom';
 
 import shawn_mendes from './assets/shawn_mendes.png';
 import justin from './assets/justin.png';
@@ -31,26 +32,27 @@ export default function Allmusic({ setPage }) {
     { img: boy, name: "boyhood" }
   ];
 
+  const navigate = useNavigate();
+
   return (
     <div className='music-div'>
       <button className='all'>모두</button>
       <button 
         className='only-music' 
-        onClick={() => setPage('onlymusic')}
+        onClick={() => navigate('/onlymusic')}
       >
         음악
       </button>
       <button 
         className='potcast'
-        onClick={() => setPage('potcast')}
+        onClick={() => navigate('/potcast')}
       >
         팟캐스트
       </button>
 
-      {/* 플레이리스트 클릭 시 Playlist.jsx 렌더링 */}
       <div 
         className='music-div-pl'
-        onClick={() => setPage('playlist')}
+        onClick={() => navigate('/playlist')}
       >
         <img src={pl_title} className='pl-title-img'/>
         <p className='pl-title'> 내 플레이리스트#1 </p>

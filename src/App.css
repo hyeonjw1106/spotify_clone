@@ -612,3 +612,51 @@ body {
   margin-left: 70px;
   margin-top: -50px;
 }
+
+.premium-div {
+  background: linear-gradient(to right, #ff2c97, #682699);
+  width: 1440px;
+  height: 500px;
+  margin-top: -63px;
+}
+
+.premium-message {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.premium-start-but {
+  margin-left: 530px;
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+  height: 50px;
+  margin-top: 50px;
+}
+
+.premium-viral {
+  font-weight: 600;
+  margin-left: 480px;
+}
+
+.premium-show-but {
+  background-color: rgba(255, 0, 0, 0); /* 빨강, 투명도 50% */
+  border: 1px solid white;
+  margin-left: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.pay-system-div {
+  background-color: black;
+  width: 1440px;
+  height: 300px;
+  margin-top: -16px;
+}
+
+.pay-system-viral {
+  margin-top: 45px;
+  margin-left: 520px;
+  font-size: 35px;
+}
